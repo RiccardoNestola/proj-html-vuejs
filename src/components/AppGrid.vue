@@ -10,12 +10,13 @@ export default {
 
             <section class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-10 col-lg-7 pt-5 text-center m-auto">
-                        <h2 class="pb-2 fw-bold">Meet The New Agency SEO Template From The Avada Team</h2>
-                        <p class="pb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <div class="col-12 col-sm-12 col-md-10 col-lg-7 text-center m-auto">
+                        <h2 class=" p-4 pb-2 fw-bold">Meet The New Agency SEO Template From The Avada Team</h2>
+                        <p class="pb-2 px-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
                     </div>
                 </div>
             </section>
+
         </div>
 
         <section class="grid container">
@@ -97,7 +98,7 @@ export default {
 
 .grid{
     background-color: $Background-color-light;
-    padding: 100px 100px 0px 100px;
+    padding: 60px 100px 0px 100px;
 }
 
 .grid-text{
