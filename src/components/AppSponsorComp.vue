@@ -11,23 +11,24 @@ export default {
 
 
             <div class="row">
-                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0 text-center">
+                <div class="col-6 col-lg-3 col-md-12 mb-4 mb-lg-0 text-center">
                     <img src="../assets/img/clients_partner_5-200x202.png" class="w-50 shadow-1-strong rounded mb-4"
                         alt="" />
+
                 </div>
 
-                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0 text-center">
+                <div class="col-6 col-lg-3 col-md-12 mb-4 mb-lg-0 text-center">
                     <img src="../assets/img/clients_partner_6-200x202.png" class="w-50 shadow-1-strong rounded mb-4"
                         alt="" />
                 </div>
 
-                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0 text-center">
+                <div class="col-6 col-lg-3 col-md-12 mb-4 mb-lg-0 text-center">
                     <img src="../assets/img/clients_partner_1-200x202.png" class="w-50 shadow-1-strong rounded mb-4"
                         alt="" />
 
                 </div>
 
-                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0 text-center">
+                <div class="col-6 col-lg-3 col-md-12 mb-4 mb-lg-0 text-center">
                     <img src="../assets/img/clients_partner_2-200x202.png" class="w-50 shadow-1-strong rounded mb-4"
                         alt="" />
                 </div>

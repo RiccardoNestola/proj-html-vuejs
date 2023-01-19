@@ -1,6 +1,6 @@
 <script>
 export default {
-    
+
 }
 </script>
 
@@ -8,12 +8,13 @@ export default {
     <div class="hero">
         <div class="my-container">
 
-            <div class="row">
-                <div class="col-4 mt-4 hero-text">
+            <div class="row-col-12">
+                <div class="col-10 col-md-6 col-lg-5 mx-2 mx-5-lg hero-text">
                     <h1 class="text-white">
                         SEM Campaigns Made simple with Avada
                     </h1>
-                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis, necessitatibus.</p>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis,
+                        necessitatibus.</p>
                     <a class="my-button text-uppercase" href="">buy avada now</a>
                     <a class="my-button my-button-secondary text-uppercase mx-3" href="">Contact us</a>
                 </div>
@@ -25,9 +26,9 @@ export default {
 <style lang="scss" scoped>
 @use "../styles/general.scss" as *;
 @use "../styles/partials/variables.scss" as *;
-@use "bootstrap/scss/bootstrap" as *; 
+@use "bootstrap/scss/bootstrap" as *;
 
-.hero{
+.hero {
     background-image: url(../assets/img/1-hero-image.png);
     height: 700px;
     background-position: center;
@@ -35,14 +36,12 @@ export default {
     background-size: cover;
 }
 
-.hero-text{
+.hero-text {
     padding-top: 180px;
 
 }
 
-h1{
+h1 {
     font-weight: 700;
 }
-
-
 </style>
