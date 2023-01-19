@@ -2,6 +2,8 @@
 import AppHero from './AppHero.vue'
 import AppGrid from './AppGrid.vue'
 import AppDarkGrid from './AppDarkGrid.vue'
+import AppWorksGrid from './AppWorksGrid.vue'
+
 export default {
 
     name:"AppMain",
@@ -9,7 +11,8 @@ export default {
     components: {
         AppHero,
         AppGrid,
-        AppDarkGrid
+        AppDarkGrid,
+        AppWorksGrid
 }
     
 }
@@ -19,6 +22,7 @@ export default {
     <AppHero />
     <AppGrid />
     <AppDarkGrid />
+    <AppWorksGrid />
 </template>
 
 <style lang="scss">
