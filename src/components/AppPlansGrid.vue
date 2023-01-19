@@ -119,15 +119,6 @@ export default {
             
         </section>
 
-        <div class="row">
-                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-12 text-center">
-                            <div class="pt-3">
-                        
-                            </div>
-                    
-                    </div>
-                </div>
-
 
 
 
@@ -144,6 +135,9 @@ export default {
 .grid{
     background-color: $Deep-Cove;
     background-image: url(../assets/img/background1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 80px;
 }
 
