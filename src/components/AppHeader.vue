@@ -21,11 +21,11 @@ data(){
 <template>
     <header>
     <div class="container-header">
-        <nav class="flex">
+        <nav class="flex navbar navbar-expand-lg">
                 <a href="#" class="logo-link">
                     <img class="logo" src="../assets/img/logo_seo_w_1x.png" alt="Logo">
                 </a>
-                <ul class="menu flex" v-for="item in store.menuList">
+                <ul class="menu collapse navbar-collapse" v-for="item in store.menuList">
                     <li> <a class="" href="#">{{item}}</a></li>
                     <!-- <li> <a class="" href="#">Who We Do</a></li>
                     <li> <a class="" href="#">What We Do</a></li>
@@ -33,8 +33,12 @@ data(){
                     <li> <a class="" href="#">Careers</a><span>APPLY</span></li>
                     <li> <a class="" href="#">News</a></li> -->
                 </ul>
-                <a class="my-button-header" href="#">GET IN TOUCH NOW</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="my-button-header d-none d-lg-block" href="#">GET IN TOUCH NOW</a>
             </nav>
+
             
         
 </div>
@@ -74,7 +78,7 @@ nav.flex {
     padding: 1rem;
 
     a.logo-link {
-    flex-grow: 2;
+    flex-grow: 20;
 }
 
 }

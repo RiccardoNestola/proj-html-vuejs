@@ -77,7 +77,7 @@ export default {
         <div class="row">
                     <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-12 text-center">
                             <div class="pt-3">
-                                <img src="../assets/img/agency-seo-desk-front-1200x570.jpg" class="img-fluid" alt="stanceland cap image">
+                                <img src="../assets/img/agency-seo-desk-front-1200x570.jpg" class="img-fluid" alt="">
                             </div>
                     
                     </div>

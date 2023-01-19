@@ -4,6 +4,8 @@ import AppGrid from './AppGrid.vue'
 import AppDarkGrid from './AppDarkGrid.vue'
 import AppWorksGrid from './AppWorksGrid.vue'
 import AppPlansGrid from './AppPlansGrid.vue'
+import AppNewsGrid from './AppNewsGrid.vue'
+import AppClientsComp from './AppClientsComp.vue'
 
 export default {
 
@@ -14,7 +16,9 @@ export default {
         AppGrid,
         AppDarkGrid,
         AppWorksGrid,
-        AppPlansGrid
+        AppPlansGrid,
+        AppNewsGrid,
+        AppClientsComp
 }
     
 }
@@ -26,6 +30,8 @@ export default {
     <AppDarkGrid />
     <AppWorksGrid />
     <AppPlansGrid />
+    <AppNewsGrid />
+    <AppClientsComp />
 </template>
 
 <style lang="scss">

@@ -19,54 +19,61 @@ export default {
         </div>
 
         <section class="grid container">
-            <div class="row mb-4">
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-md-flex align-items-md-start flex-column justify-content-center ">
-                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6">
-                        <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="img-fluid" alt="ferrari image">
-                    </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img
+                    src="../assets/img/case-study-gallery-3-1-400x300.jpg"
+                    class="w-100 shadow-1-strong mb-4"
+                    alt=""
+                    />
+
+                    <img
+                    src="../assets/img/case-study-gallery-3-1-400x300.jpg"
+                    class="w-100 shadow-1-strong mb-4"
+                    alt=""
+                    />
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-md-flex align-items-md-start flex-column justify-content-center">
-                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6">
-                        <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="img-fluid" alt="ferrari image">
-                    </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img
+                    src="../assets/img/case-study-gallery-3-1-400x300.jpg"
+                    class="w-100 shadow-1-strong mb-4"
+                    alt=""
+                    />
+
+                    <img
+                    src="../assets/img/case-study-gallery-3-1-400x300.jpg"
+                    class="w-100 shadow-1-strong mb-4"
+                    alt=""
+                    />
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-md-flex align-items-md-start flex-column justify-content-center">
-                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6">
-                        <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="img-fluid" alt="ferrari image">
-                    </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img
+                    src="../assets/img/case-study-gallery-3-1-400x300.jpg"
+                    class="w-100 shadow-1-strong mb-4"
+                    alt=""
+                    />
+
+                    <img
+                    src="../assets/img/case-study-gallery-3-1-400x300.jpg"
+                    class="w-100 shadow-1-strong mb-4"
+                    alt=""
+                    />
                 </div>
             </div>
-            <div class="row mb-4">
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-md-flex align-items-md-start flex-column justify-content-center">
-                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6">
-                        <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="img-fluid" alt="ferrari image">
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-md-flex align-items-md-start flex-column justify-content-center">
-                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6">
-                        <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="img-fluid" alt="ferrari image">
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-md-flex align-items-md-start flex-column justify-content-center">
-                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6">
-                        <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="img-fluid" alt="ferrari image">
-                    </div>
-                </div>
-            </div>
-
+            
             <div class="row">
                     <div class="col-12 col-sm-12 col-md-10 col-lg-7 p-4 text-center m-auto">
                         <a class="my-button my-button-primary text-uppercase " href="">view out work</a>
                     </div>
                 </div>
-
-            
-            
         </section>
+
+        
+
+
 
         
 
