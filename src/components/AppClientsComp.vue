@@ -90,9 +90,9 @@ p {
     border: .5px solid $Pale-Slate;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .grid {
-        padding: 0;
+        padding: 10px;
     }
 
 }
