@@ -1,7 +1,19 @@
 <script>
+import { store } from "../store"
+
 export default {
 
-    /* name:"AppHeader" */
+    name:"AppHeader",
+    components: {
+        
+},
+
+data(){
+        return{
+            store
+            
+        }
+    }
     
 }
 </script>
@@ -13,20 +25,19 @@ export default {
                 <a href="#" class="logo-link">
                     <img class="logo" src="../assets/img/logo_seo_w_1x.png" alt="Logo">
                 </a>
-                <ul class="menu flex">
-                    <li> <a class="" href="#">Home</a></li>
-                    <li> <a class="" href="#">Who We Do</a></li>
+                <ul class="menu flex" v-for="item in store.menuList">
+                    <li> <a class="" href="#">{{item}}</a></li>
+                    <!-- <li> <a class="" href="#">Who We Do</a></li>
                     <li> <a class="" href="#">What We Do</a></li>
                     <li> <a class="" href="#">Where We Work</a></li>
                     <li> <a class="" href="#">Careers</a><span>APPLY</span></li>
-                    <li> <a class="" href="#">News</a></li>
+                    <li> <a class="" href="#">News</a></li> -->
                 </ul>
-                <a class="login " href="#">GET IN TOUCH NOW</a>
+                <a class="my-button-header" href="#">GET IN TOUCH NOW</a>
             </nav>
             
-
-        </div>
-
+        
+</div>
         
 
 
@@ -72,7 +83,7 @@ ul li {
     text-decoration: none;
     list-style-type: none;
     padding: .8rem;
-    color: --White-Color-text;
+    color: white;
     font-size: .8rem;
     
     
@@ -83,6 +94,9 @@ a {
     color: white;
 }
 
+img{
+    width: 132px;
+}
 
 
     
