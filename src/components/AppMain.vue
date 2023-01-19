@@ -6,10 +6,11 @@ import AppWorksGrid from './AppWorksGrid.vue'
 import AppPlansGrid from './AppPlansGrid.vue'
 import AppNewsGrid from './AppNewsGrid.vue'
 import AppClientsComp from './AppClientsComp.vue'
+import AppSponsorComp from './AppSponsorComp.vue'
 
 export default {
 
-    name:"AppMain",
+    name: "AppMain",
 
     components: {
         AppHero,
@@ -18,9 +19,10 @@ export default {
         AppWorksGrid,
         AppPlansGrid,
         AppNewsGrid,
-        AppClientsComp
-}
-    
+        AppClientsComp,
+        AppSponsorComp
+    }
+
 }
 </script>
 
@@ -32,8 +34,9 @@ export default {
     <AppPlansGrid />
     <AppNewsGrid />
     <AppClientsComp />
+    <AppSponsorComp />
 </template>
 
 <style lang="scss">
-    
+
 </style>
