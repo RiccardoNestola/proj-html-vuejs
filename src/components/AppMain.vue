@@ -29,15 +29,18 @@ export default {
 </script>
 
 <template>
-    <AppHero />
-    <AppGrid />
-    <AppDarkGrid />
-    <AppWorksGrid />
-    <AppPlansGrid />
-    <AppNewsGrid />
-    <AppClientsComp />
-    <AppSponsorComp />
-    <AppStartComp />
+    <main>
+        <AppHero />
+        <AppGrid />
+        <AppDarkGrid />
+        <AppWorksGrid />
+        <AppPlansGrid />
+        <AppNewsGrid />
+        <AppClientsComp />
+        <AppSponsorComp />
+        <AppStartComp />
+    </main>
+
 </template>
 
 <style lang="scss">

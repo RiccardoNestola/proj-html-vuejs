@@ -1,6 +1,7 @@
 <script>
 export default {
-    
+    name: "AppWorksGrid",
+
 }
 </script>
 
@@ -12,7 +13,8 @@ export default {
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-10 col-lg-7 p-5 text-center m-auto">
                         <h2 class="pb-2 fw-bold">Our Works</h2>
-                        <p class="pb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                        <p class="pb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium.</p>
                     </div>
                 </div>
             </section>
@@ -22,101 +24,84 @@ export default {
 
             <div class="row">
                 <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <img
-                    src="../assets/img/case-study-gallery-3-1-400x300.jpg"
-                    class="w-100 shadow-1-strong mb-4"
-                    alt=""
-                    />
+                    <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
+                        alt="" />
 
-                    <img
-                    src="../assets/img/case-study-gallery-3-1-400x300.jpg"
-                    class="w-100 shadow-1-strong mb-4"
-                    alt=""
-                    />
+                    <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
+                        alt="" />
                 </div>
 
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img
-                    src="../assets/img/case-study-gallery-3-1-400x300.jpg"
-                    class="w-100 shadow-1-strong mb-4"
-                    alt=""
-                    />
+                    <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
+                        alt="" />
 
-                    <img
-                    src="../assets/img/case-study-gallery-3-1-400x300.jpg"
-                    class="w-100 shadow-1-strong mb-4"
-                    alt=""
-                    />
+                    <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
+                        alt="" />
                 </div>
 
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img
-                    src="../assets/img/case-study-gallery-3-1-400x300.jpg"
-                    class="w-100 shadow-1-strong mb-4"
-                    alt=""
-                    />
+                    <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
+                        alt="" />
 
-                    <img
-                    src="../assets/img/case-study-gallery-3-1-400x300.jpg"
-                    class="w-100 shadow-1-strong mb-4"
-                    alt=""
-                    />
+                    <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
+                        alt="" />
                 </div>
             </div>
-            
+
             <div class="row">
-                    <div class="col-12 col-sm-12 col-md-10 col-lg-7 p-4 text-center m-auto">
-                        <a class="my-button my-button-primary text-uppercase " href="">view out work</a>
-                    </div>
+                <div class="col-12 col-sm-12 col-md-10 col-lg-7 p-4 text-center m-auto">
+                    <a class="my-button my-button-primary text-uppercase " href="">view out work</a>
                 </div>
+            </div>
         </section>
 
-        
 
 
 
-        
+
+
 
 
 
 
     </div>
 
-    
+
 </template>
 
 <style lang="scss" scoped>
 @use "../styles/general.scss" as *;
 @use "../styles/partials/variables.scss" as *;
-@use "bootstrap/scss/bootstrap" as *; 
+@use "bootstrap/scss/bootstrap" as *;
 
-.grid{
+.grid {
     background-color: $Background-color-light;
     /* padding: 100px 100px 0px 100px; */
 }
 
-.grid-text{
+.grid-text {
     padding-top: 80px;
 
 }
 
-h2{
+h2 {
     font-weight: 700;
-    
+
 }
-p{
+
+p {
     font-weight: 400;
 }
 
 /* .wrapper{
 } */
 
-.my-icon{
+.my-icon {
     font-size: 25px;
 }
-.my-icon:hover{
-    color: $Secondary-Color;
-    
-}
 
+.my-icon:hover {
+    color: $Secondary-Color;
+
+}
 </style>

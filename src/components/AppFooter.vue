@@ -1,15 +1,33 @@
 <script>
+import AppLogoFooterComp from './AppLogoFooterComp.vue'
+import AppMenuFooterComp from './AppMenuFooterComp.vue'
+import AppCreditsFooterComp from './AppCreditsFooterComp.vue'
+import AppSocialFooterComp from './AppSocialFooterComp.vue'
+
 export default {
-    name:"AppFooter"
-    
+
+    name: "AppFooter",
+
+    components: {
+        AppLogoFooterComp,
+        AppMenuFooterComp,
+        AppCreditsFooterComp,
+        AppSocialFooterComp
+    }
+
 }
 </script>
 
 <template>
-    <div>
-    </div>
+    <footer>
+        <AppLogoFooterComp />
+        <AppMenuFooterComp />
+        <AppCreditsFooterComp />
+        <AppSocialFooterComp />
+    </footer>
+
 </template>
 
-<style lang="scss" scoped>
-    
+<style lang="scss">
+
 </style>
