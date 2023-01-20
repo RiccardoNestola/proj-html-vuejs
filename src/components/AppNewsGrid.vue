@@ -46,35 +46,7 @@ export default {
                         <p class="date text-center">{{item.date}}</p>
                         <p class="text-center">{{item.description}}</p>
                     </div>
-
-
                 </div>
-
-                <!-- <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
-                        alt="" />
-                    <div class="wrap-text">
-                        <h4 class="text-center">Why You Need A SEO Agency Now</h4>
-                        <p class="date text-center">November 1st, 2017</p>
-                        <p class="text-center">ALorem ipsum dolor sit amet, consectetur adipiscing elit. In et
-                            scelerisque sem. Nunc molestie neque augue, at gravida mi blandit</p>
-                    </div>
-
-
-                </div>
-
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
-                        alt="" />
-                    <div class="wrap-text">
-                        <h4 class="text-center">Why You Need A SEO Agency Now</h4>
-                        <p class="date text-center">November 1st, 2017</p>
-                        <p class="text-center">ALorem ipsum dolor sit amet, consectetur adipiscing elit. In et
-                            scelerisque sem. Nunc molestie neque augue, at gravida mi blandit</p>
-                    </div>
-
-
-                </div> -->
             </div>
 
             <div class="row">
