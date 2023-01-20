@@ -1,3 +1,5 @@
+@use "../styles/partials/variables" as *;
+
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +43,7 @@ body{
 
 
 a.my-button-header {
-    background: #ffa837;
+    background:$Secondary-Color;
     border-radius: 50px;
     font-size: 0.6rem;
     font-weight: 700;
@@ -55,7 +57,7 @@ a.my-button-header {
 }
 
 a.my-button {
-    background: #ffa837;
+    background: $Secondary-Color;
     border-radius: 50px;
     font-size: 0.6rem;
     font-weight: bold;
