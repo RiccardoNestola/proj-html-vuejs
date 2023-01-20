@@ -1,6 +1,15 @@
 <script>
+import { store } from "../store"
 export default {
     name: "AppDarkGrid",
+
+
+    data() {
+        return {
+            store
+
+        }
+    }
 
 }
 </script>
@@ -23,86 +32,21 @@ export default {
         <section class="grid container">
             <div class="row mb-4">
 
-                <div
-                    class="col-12 col-sm-12 col-md-6 col-lg-3 d-md-flex align-items-md-start flex-column justify-content-center align-content-center">
-                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6 text-center">
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-md-flex align-items-md-start flex-column justify-content-center align-content-center" v-for="item in store.ServicesList">
+                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6 text-center" >
                         <div class="pt-3 m-2 wrapper">
                             <div class="pt-3 my-icon">
-                                <i class="fa-solid fa-road"></i>
+                                <i :class="item.icon"></i>
                             </div>
                             <div class="pt-3 text-center text-white">
-                                <h3>Establish Goals</h3>
+                                <h4>{{item.title}}</h4>
                             </div>
                             <div class="pt-3 text-center text-white">
-                                <p>Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis mi ligula
-                                    euismod odio vel dictum mi risus a mi.</p>
+                                <p>{{item.description}}</p>
                             </div>
                             <div class="pt-3 text-center">
-                                <span>Read More ></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div
-                    class="col-12 col-sm-12 col-md-6 col-lg-3 d-md-flex align-items-md-start flex-column justify-content-center align-content-center">
-                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6 text-center">
-                        <div class="pt-3 m-2 wrapper">
-                            <div class="pt-3 icon my-icon">
-                                <i class="fa-solid fa-video"></i>
-                            </div>
-                            <div class="pt-3 text-center text-white">
-                                <h3>Establish Goals</h3>
-                            </div>
-                            <div class="pt-3 text-center text-white">
-                                <p>Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis mi ligula
-                                    euismod odio vel dictum mi risus a mi.</p>
-                            </div>
-                            <div class="pt-3 text-center">
-                                <span>Read More ></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    class="col-12 col-sm-12 col-md-6 col-lg-3 d-md-flex align-items-md-start flex-column justify-content-center align-content-center">
-                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6 text-center">
-                        <div class="pt-3 m-2 wrapper">
-                            <div class="pt-3 my-icon">
-                                <i class="fa-solid fa-droplet"></i>
-                            </div>
-                            <div class="pt-3 text-center text-white">
-                                <h3>Establish Goals</h3>
-                            </div>
-                            <div class="pt-3 text-center text-white">
-                                <p>Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis mi ligula
-                                    euismod odio vel dictum mi risus a mi.</p>
-                            </div>
-                            <div class="pt-3 text-center">
-                                <span>Read More ></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    class="col-12 col-sm-12 col-md-6 col-lg-3 d-md-flex align-items-md-start flex-column justify-content-center align-content-center">
-                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6 text-center">
-                        <div class="pt-3 m-2 wrapper">
-                            <div class="pt-3 my-icon">
-                                <i class="fa-solid fa-droplet"></i>
-                            </div>
-                            <div class="pt-3 text-center text-white">
-                                <h3>Establish Goals</h3>
-                            </div>
-                            <div class="pt-3 text-center text-white">
-                                <p>Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis mi ligula
-                                    euismod odio vel dictum mi risus a mi.</p>
-                            </div>
-                            <div class="pt-3 text-center">
-                                <span>Read More ></span>
+                                <span><a href="">{{item.link}}</a></span>
                             </div>
                         </div>
                     </div>
@@ -155,9 +99,10 @@ p {
     font-weight: 400;
 }
 
-span {
+a {
 
     color: $Secondary-Color;
+    text-decoration: none;
 }
 
 .wrapper {

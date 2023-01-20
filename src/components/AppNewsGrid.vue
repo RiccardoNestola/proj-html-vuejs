@@ -1,6 +1,21 @@
 <script>
+import { store } from "../store"
 export default {
     name: "AppNewsGrid",
+
+
+    data() {
+        return {
+            store
+
+        }
+    },
+
+    methods: {
+        getImagePath: function (imgPath) {
+            return new URL(`../assets/img/${imgPath}.jpg`, import.meta.url).href;
+        }
+    },
 
 }
 </script>
@@ -23,7 +38,19 @@ export default {
         <section class="grid container">
 
             <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" v-for="item in store.ObjectNewsList">
+                    <img :src="getImagePath(item.image)" class="w-100 shadow-1-strong mb-4"
+                        alt="" />
+                    <div class="wrap-text">
+                        <h4 class="text-center">{{item.title}}</h4>
+                        <p class="date text-center">{{item.date}}</p>
+                        <p class="text-center">{{item.description}}</p>
+                    </div>
+
+
+                </div>
+
+                <!-- <div class="col-lg-4 mb-4 mb-lg-0">
                     <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
                         alt="" />
                     <div class="wrap-text">
@@ -47,20 +74,7 @@ export default {
                     </div>
 
 
-                </div>
-
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
-                        alt="" />
-                    <div class="wrap-text">
-                        <h4 class="text-center">Why You Need A SEO Agency Now</h4>
-                        <p class="date text-center">November 1st, 2017</p>
-                        <p class="text-center">ALorem ipsum dolor sit amet, consectetur adipiscing elit. In et
-                            scelerisque sem. Nunc molestie neque augue, at gravida mi blandit</p>
-                    </div>
-
-
-                </div>
+                </div> -->
             </div>
 
             <div class="row">

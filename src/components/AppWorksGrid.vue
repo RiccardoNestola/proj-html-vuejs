@@ -42,7 +42,7 @@ export default {
         <section class="grid container">
 
             <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" v-for="image in store.imageWorksPath">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" v-for="image in store.imageWorksList">
                     <img :src="getImagePath(image.image)" class="w-100 shadow-1-strong mb-4" alt="" />
                 </div>
             </div>
