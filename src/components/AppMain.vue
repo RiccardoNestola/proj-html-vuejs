@@ -1,4 +1,5 @@
 <script>
+import { store } from "../store"
 import AppHero from './AppHero.vue'
 import AppGrid from './AppGrid.vue'
 import AppDarkGrid from './AppDarkGrid.vue'
@@ -23,6 +24,13 @@ export default {
         AppClientsComp,
         AppSponsorComp,
         AppStartComp
+    },
+
+    data() {
+        return {
+            store
+
+        }
     }
 
 }

@@ -1,8 +1,27 @@
 <script>
+import { store } from "../store"
+
 export default {
     name: "AppWorksGrid",
 
+
+    data() {
+        return {
+            store
+
+        }
+    },
+
+    methods: {
+        getImagePath: function (imgPath) {
+            return new URL(`../assets/img/${imgPath}.jpg`, import.meta.url).href;
+        }
+    },
+
+
 }
+
+
 </script>
 
 <template>
@@ -23,28 +42,8 @@ export default {
         <section class="grid container">
 
             <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
-                        alt="" />
-
-                    <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
-                        alt="" />
-                </div>
-
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
-                        alt="" />
-
-                    <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
-                        alt="" />
-                </div>
-
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
-                        alt="" />
-
-                    <img src="../assets/img/case-study-gallery-3-1-400x300.jpg" class="w-100 shadow-1-strong mb-4"
-                        alt="" />
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" v-for="image in store.imageWorksPath">
+                    <img :src="getImagePath(image.image)" class="w-100 shadow-1-strong mb-4" alt="" />
                 </div>
             </div>
 
