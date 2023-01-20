@@ -148,7 +148,20 @@ export const store = reactive({
 
     ],
 
-
+    sponsorImageList: [
+        {
+            image: 'clients_partner_5-200x202',
+        },
+        {
+            image: 'clients_partner_6-200x202',
+        },
+        {
+            image: 'clients_partner_1-200x202',
+        },
+        {
+            image: 'clients_partner_2-200x202',
+        },
+    ],
 
 
 
