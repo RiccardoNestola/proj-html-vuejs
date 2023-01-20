@@ -1,8 +1,19 @@
 <script>
+import { store } from "../store"
+
 export default {
     name: "AppGrid",
 
+    data() {
+        return {
+            store
+
+        }
+    }
 }
+
+
+
 </script>
 
 <template>
@@ -24,56 +35,17 @@ export default {
         <section class="grid container">
             <div class="row mb-4">
 
-                <div
-                    class="col-12 col-sm-12 col-md-4 col-lg-4 d-md-flex align-items-md-start flex-column justify-content-center align-content-center">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-md-flex align-items-md-start flex-column justify-content-center align-content-center" v-for="item in store.MeetAgencyList">
                     <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6 text-center">
                         <div class="pt-3 m-2 wrapper">
                             <div class="pt-3 my-icon">
-                                <i class="fa-solid fa-road"></i>
+                                <i :class="item.icon"></i>
                             </div>
                             <div class="pt-3 text-center">
-                                <h3>Establish Goals</h3>
+                                <h3>{{item.title}}</h3>
                             </div>
                             <div class="pt-3 text-center ">
-                                <p>Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis mi ligula
-                                    euismod odio vel dictum mi risus a mi.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div
-                    class="col-12 col-sm-12 col-md-4 col-lg-4 d-md-flex align-items-md-start flex-column justify-content-center align-content-center">
-                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6 text-center">
-                        <div class="pt-3 m-2 wrapper">
-                            <div class="pt-3 icon my-icon">
-                                <i class="fa-solid fa-video"></i>
-                            </div>
-                            <div class="pt-3 text-center">
-                                <h3>Establish Goals</h3>
-                            </div>
-                            <div class="pt-3 text-center ">
-                                <p>Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis mi ligula
-                                    euismod odio vel dictum mi risus a mi.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    class="col-12 col-sm-12 col-md-4 col-lg-4 d-md-flex align-items-md-start flex-column justify-content-center align-content-center">
-                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6 text-center">
-                        <div class="pt-3 m-2 wrapper">
-                            <div class="pt-3 my-icon">
-                                <i class="fa-solid fa-droplet"></i>
-                            </div>
-                            <div class="pt-3 text-center">
-                                <h3>Establish Goals</h3>
-                            </div>
-                            <div class="pt-3 text-center ">
-                                <p>Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis mi ligula
-                                    euismod odio vel dictum mi risus a mi.</p>
+                                <p>{{item.description}}</p>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,15 @@
 <script>
+import { store } from "../store"
+
 export default {
     name: "AppPlansGrid",
+
+    data() {
+        return {
+            store
+
+        }
+    }
 
 }
 </script>
@@ -23,26 +32,25 @@ export default {
         <section class="container">
             <div class="row mb-4">
 
-                <div
-                    class="col-12 col-sm-12 col-md-6 col-lg-3 d-md-flex align-items-md-start flex-column justify-content-center align-content-center">
+                
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-md-flex align-items-md-start flex-column justify-content-center align-content-center" v-for="item in store.PriceList">
                     <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6 text-center wrapper mb-2">
                         <div class="pt-3 m-2 ">
 
                             <div class="pt-3 text-center">
-                                <h3>Standard</h3>
+                                <h3>{{item.type}}</h3>
                             </div>
                             <div class="panel-body pricing-row">
-                                <div class="price price-with-decimal"><span class="currency">$</span><span
-                                        class="integer-part">19</span><sup class="decimal-part">99</sup><span
-                                        class="time">monthly</span></div>
+                                <div class="price price-with-decimal"><span class="currency">{{item.currency}}</span><span
+                                        class="integer-part">{{item.integerPrice}}</span><sup class="decimal-part">{{item.decimalPrice}}</sup><span
+                                        class="time">{{item.time}}</span></div>
                                 <div class="pt-3 text-center">
                                     <ul class="list-group">
-                                        <li class="list-group-item py-4">5 Projects</li>
-                                        <li class="list-group-item py-4">5 GB Storage</li>
-                                        <li class="list-group-item py-4">Unlimited Users</li>
+                                        <li class="list-group-item py-4">{{item.numberProject}}</li>
+                                        <li class="list-group-item py-4">{{item.storage}}</li>
+                                        <li class="list-group-item py-4">{{item.numberUsers}}</li>
                                         <li class="list-group-item py-4"><a
-                                                class="my-button my-button-outline text-uppercase" href="">start
-                                                today</a></li>
+                                                class="my-button my-button-outline text-uppercase" href="">{{item.link}}</a></li>
 
                                     </ul>
                                 </div>
@@ -52,7 +60,7 @@ export default {
                 </div>
 
 
-                <div
+                <!-- div
                     class="col-12 col-sm-12 col-md-6 col-lg-3 d-md-flex align-items-md-start flex-column justify-content-center align-content-center">
                     <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6 text-center wrapper mb-2">
                         <div class="pt-3 m-2">
@@ -78,9 +86,37 @@ export default {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div
+                <!-- <div
+                    class="col-12 col-sm-12 col-md-6 col-lg-3 d-md-flex align-items-md-start flex-column justify-content-center align-content-center">
+                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6 text-center wrapper mb-2">
+                        <div class="pt-3 m-2">
+
+                            <div class="pt-3 text-center">
+                                <h3>Standard</h3>
+                            </div>
+                            <div class="panel-body pricing-row">
+                                <div class="price price-with-decimal"><span class="currency">$</span><span
+                                        class="integer-part">19</span><sup class="decimal-part">99</sup><span
+                                        class="time">monthly</span></div>
+                                <div class="pt-3 text-center">
+                                    <ul class="list-group">
+                                        <li class="list-group-item py-4">5 Projects</li>
+                                        <li class="list-group-item py-4">5 GB Storage</li>
+                                        <li class="list-group-item py-4">Unlimited Users</li>
+                                        <li class="list-group-item py-4"><a
+                                                class="my-button my-button-outline text-uppercase" href="">start
+                                                today</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div> -->
+
+                <!-- <div
                     class="col-12 col-sm-12 col-md-6 col-lg-3 d-md-flex align-items-md-start flex-column justify-content-center align-content-center">
                     <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6 text-center wrapper mb-2">
                         <div class="pt-3 m-2">
@@ -106,36 +142,8 @@ export default {
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div
-                    class="col-12 col-sm-12 col-md-6 col-lg-3 d-md-flex align-items-md-start flex-column justify-content-center align-content-center">
-                    <div class="w-100 col-12 col-sm-12 col-md-7 col-lg-6 text-center wrapper mb-2">
-                        <div class="pt-3 m-2">
-
-                            <div class="pt-3 text-center">
-                                <h3>Standard</h3>
-                            </div>
-                            <div class="panel-body pricing-row">
-                                <div class="price price-with-decimal"><span class="currency">$</span><span
-                                        class="integer-part">19</span><sup class="decimal-part">99</sup><span
-                                        class="time">monthly</span></div>
-                                <div class="pt-3 text-center">
-                                    <ul class="list-group">
-                                        <li class="list-group-item py-4">5 Projects</li>
-                                        <li class="list-group-item py-4">5 GB Storage</li>
-                                        <li class="list-group-item py-4">Unlimited Users</li>
-                                        <li class="list-group-item py-4"><a
-                                                class="my-button my-button-outline text-uppercase" href="">start
-                                                today</a></li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </div> -->
+            </div> 
 
 
 

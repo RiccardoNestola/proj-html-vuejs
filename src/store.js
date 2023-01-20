@@ -55,6 +55,29 @@ export const store = reactive({
 
     ],
 
+
+    MeetAgencyList: [
+        {
+            icon: 'fa-solid fa-road',
+            title: 'Establish Goals',
+            description: 'Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis mi ligula euismod odio vel dictum mi risus a mi.',
+        },
+        {
+            icon: 'fa-solid fa-video',
+            title: 'Work With a Team',
+            description: 'Cras semper auctor aliquam. Sed porta sed lacus sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisce.',
+        },
+        {
+            icon: 'fa-solid fa-droplet',
+            title: 'Get Results',
+            description: 'Vestibulum scelerisque egestas lectus sit amet molestie. Donec consectetur cursus est sed blandit. Nunc sed risus lacus.',
+        }
+
+    ],
+
+
+
+
     ObjectNewsList: [
         {
             image: 'related-service-2-700x441',
@@ -77,6 +100,53 @@ export const store = reactive({
 
     ],
 
+    PriceList: [
+        {
+            type: 'Standard',
+            currency: '$',
+            integerPrice: '19',
+            decimalPrice: '99',
+            time: 'monthly',
+            numberProject: "5 Project",
+            storage: '5 GB Storage',
+            numberUsers: "Unlimited Users",
+            link: "start today",
+        },
+        {
+            type: 'Premium',
+            currency: '$',
+            integerPrice: '29',
+            decimalPrice: '99',
+            time: 'monthly',
+            numberProject: "10 Project",
+            storage: '15 GB Storage',
+            numberUsers: "Unlimited Users",
+            link: "start today",
+        },
+        {
+            type: 'Professional',
+            currency: '$',
+            integerPrice: '39',
+            decimalPrice: '99',
+            time: 'monthly',
+            numberProject: "15 Project",
+            storage: '30 GB Storage',
+            numberUsers: "Unlimited Users",
+            link: "start today",
+        },
+        {
+            type: 'Extreme',
+            currency: '$',
+            integerPrice: '59',
+            decimalPrice: '99',
+            time: 'monthly',
+            numberProject: "Unlimited Projects",
+            storage: 'Unlimited Storage',
+            numberUsers: "Unlimited Users",
+            link: "start today",
+        },
+
+    ],
 
 
 
